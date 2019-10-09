@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Adhoc Quizmania</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap css -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Extra CSS-->>
+  <link href="css/extracss.css" rel="stylesheet">
+  
+
+ 
+                                                                                                                                                                   
+</head>
+
+<body>
+
+  <header id="header" class="header header-hide">
+<div class="container">
+
+      <div id="logo" class="pull-left">
+                                <h1><a href="#body" class="scrollto"><span>QUIZ</span>MANIA</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+                                <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+                                <div class="dropdown pull-right">
+                                        <button onclick="deleteCookie1()"  class="btn btn-info" type="button" id="menu1" >Login</button>
+                                        
+                                </div>
+				<script>
+                                checkCookie();
+                                </script>
+      </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero" class="wow fadeIn">
+    <div class="hero-container">
+      <h1>Welcome to Dashboard</h1>
+      <h2></h2>
+      <img src="img/hero-img.png" alt="Hero Imgs">
+      <ul class="nav nav-pills">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle btn-get-started scrollto" data-toggle="dropdown" href="#">Get Started</a>
+        <div class="dropdown-menu " style="background:transparent;">
+          <a class="dropdown-item" href="#features">Add Test</a>
+          <a class="dropdown-item" href="#student-info">Student Information</a>
+        </div>
+      </li>
+    </ul>
+      <div class="btns">
+
+      </div>
+    </div>
+    
+  </section><!-- #hero -->
+
+
+  <!--==========================
+    Features Section
+  ============================-->
+
+  <section id="features" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Add Test</h2>
+        <p class="separator">Fill the form below to upload a test</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="regForm" autocomplete="off" action="">
+        
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab autocomplete">
+          <p><input placeholder="Course name..." oninput="this.className = ''" name="cname"></p>
+          <p><input id="myInput" placeholder="Course Category..." oninput="this.className = ''" name="category"></p>
+        </div>
+        <div class="tab">
+          <p><input placeholder="Duration..." oninput="this.className = ''" name="duration"></p>
+          <p><input placeholder="Level..." oninput="this.className = ''" name="level"></p>
+        </div>
+        
+        <div class="tab custom-file">
+          <p><input type="file" class="custom-file-input" id="customFile">
+          <label class="custom-file-label" for="customFile">Choose file</label></p>
+              
+          
+        </div>
+        <br>
+        
+        <div style="overflow:auto;">
+          <div style="float:right;">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          
+        </div>
+      </form>
+      
+
+    </div>
+  </section>
+
+  <!--==========================
+    Student Info Section
+  ============================-->
+
+  <section id="student-info" class="padd-section text-center wow fadeInUp">
+      <div class="container">
+          <div class="section-title text-center">
+            <h2>Student Information</h2>
+            <p class="separator">Search by Student-ID</p>
+          </div>
+        
+        <div>
+          <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+
+        
+      </div>
+  </section>
+ 
+ 
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/modal-video/js/modal-video.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <!--Extra JS-->>
+
+  <script src="js/extrajs.js"></script>
+
+</body>
+</html>
